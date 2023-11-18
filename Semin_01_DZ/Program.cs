@@ -33,7 +33,7 @@ public class Answer {
     }
 }
 */
-
+/*
 using System;
 
 public class Answer
@@ -43,13 +43,27 @@ public class Answer
     {
         // Введите свое решение ниже
 
-        if (a > b)
-            Console.WriteLine($"a");
-        else
-        if (b > c)
-            Console.WriteLine($"b");
-        else
-            Console.WriteLine($"c");
+        int max = a;
+        if (b > max) max = b;
+        if (c > max) max = c;
+        return max;
+
+        // int max = a;
+        // if (a > max) max = a;
+        // if (b > max) max = b;
+        // if (c > max) max = c;
+        // return max;
+
+        // int max = a;
+        // if (max < b)
+        // {
+        //     max = b;
+        // }
+        // if (max < c)
+        // {
+        //     max = c;
+        // }
+        // return max;
 
     }
 
@@ -75,5 +89,33 @@ public class Answer
         // Не удаляйте строки ниже
         int result = FindMax(a, b, c);
         System.Console.WriteLine($"{result}");
+    }
+}
+*/
+
+using System;
+
+class Answer {
+    static void CheckIfEven(int number)
+    {
+      // Введите свое решение ниже
+
+
+    }
+  
+
+  // Не удаляйте и не меняйте метод Main! 
+    static public void Main(string[] args) {
+        int number;
+
+        if (args.Length >= 1) {
+            number = int.Parse(args[0]);
+        } else {
+           // Здесь вы можете поменять значения для отправки кода на Выполнение
+            number = 6;
+        }
+
+        // Не удаляйте строки ниже
+        CheckIfEven(number);
     }
 }
