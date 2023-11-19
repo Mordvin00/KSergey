@@ -108,6 +108,7 @@ number: '3'
 На выходе:
 Число `3` нечётное
 */
+/*
 class Answer
 {
     static void CheckIfEven(int number)
@@ -149,3 +150,64 @@ class Answer
             CheckIfEven(number);
         }
     }
+*/
+
+using System;
+
+// Внутри класса Answer напишите метод PrintEvenNumbers,
+// которая на вход принимает число (number),
+// а на выходе выводит все чётные числа от 1 до number (включительно),
+// разделеные знаком табуляции.
+
+// number = 5 -> 2    4
+
+// number = 8 -> 2    4    6    8
+
+
+public class Answer
+{
+    static void PrintEvenNumbers(int number)
+    {
+        // Введите свое решение ниже
+
+        // for (begin, condition, step)
+        // i = (-1)*n, i++ <-> i+=1 <-> i = i + 1
+
+        for (int i = 2; i <= number; i += 2)
+            Console.Write($"{i}	"); //Console.Write($"{count}\t")
+
+    }
+
+    // Не удаляйте и не меняйте метод Main! 
+    static public void Main(string[] args)
+    {
+        int number;
+
+        if (args.Length >= 1)
+        {
+            number = int.Parse(args[0]);
+        }
+        else
+        {
+            // Здесь вы можете поменять значения для отправки кода на Выполнение
+            number = 6
+            ;
+        }
+
+        // Не удаляйте строки ниже
+        PrintEvenNumbers(number);
+    }
+}
+
+
+/*
+        Console.Write($"number = {number} -> ");
+        for (int i = 2; i < number; i += 2)
+            Console.Write($"{i}    ");
+        Console.Write(number);
+
+
+
+*/
+
+
